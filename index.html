@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="birthdayMusic" autoplay loop>
+        <source src="birthday_song.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="container">
+        <h1 class="glow">🎂 Happy Birthday, [Friend's Name]! 🎂</h1>
+        <p>Your special day is coming up on <strong>May 5, 2025</strong>!</p>
+        <div id="countdown" class="countdown"></div>
+        
+        <button onclick="toggleMusic()">🎵 Play/Pause Music</button>
+        <button onclick="showMessage()">🎁 Click for a Surprise! 🎁</button>
+        <p id="message" class="hidden">✨ Wishing you a fantastic year ahead! 🎉🥳</p>
+    </div>
+
+    <div class="slideshow">
+        <img src="photo1.jpg" class="slide">
+        <img src="photo2.jpg" class="slide">
+        <img src="photo3.jpg" class="slide">
+    </div>
+
+    <canvas id="confetti"></canvas> <!-- Confetti Effect -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
